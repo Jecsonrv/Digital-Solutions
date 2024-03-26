@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalSolutions</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Comienza fuente del curso-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> <!--Termina fuente del curso-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!---Fuente Montserrat-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <a class="logo" href="index.html">
+        <h1 class="logo-nombre centrar-texto no-margin">Digital<span class="logo-bold">Solutions</span></h1>
+    </a>
+</header>
+
+<section class="barra-navegacion">
+        <div class="barra">
+            <nav class="navegacion contenedor">
+            <a href="nosotros.html" class="navegacion-enlace">Nosotros</a>
+            <a href="productos.html" class="navegacion-enlace">Productos</a>
+            <a href="contacto.html" class="navegacion-enlace">Contacto</a>
+            </nav>
+        </div>
+</section>
+
+<h2 class="centrar-texto">¿Deseas realizar una cotización?</h2>
+<div class="contenedor contacto"> <!--Comienza codigo para formulario de contacto-->
+    
+    <!--ESCRIBIR LA RUTA DEL ARCHIVO PHP-->
+    <!--Method post-->
+        <form action="form.php" method="post" class="contacto--formulario contacto--formulario__sombra">
+            <fieldset class="fieldset">
+                <legend class="centrar-texto">Contacto</legend>
+
+                <div class="contacto--contenedor">
+                    <div class="contacto__campo">
+                        <Label>Nombre</Label>
+                        <input name="name" class="contenedor--input__text" type="text" placeholder="Juan Peréz" required="">
+                    </div>
+                    <div class="contacto__campo">
+                        <Label>Teléfono</Label>
+                        <input name="telefono" class="contenedor--input__text" type="tel" placeholder="(2215-3653)" required="">
+                    </div>
+                    <div class="contacto__campo">
+                        <Label>Email</Label>
+                        <input name="email" class="contenedor--input__text" type="email" placeholder="juanperez@gmail.com" required="">
+                    </div>
+                    <div class="contacto__campo">
+                        <label>Mensaje</label>
+                        <textarea name="msg" class="contenedor--input__text" name="" id="" cols="30" rows="10" placeholder="Mensaje" required=""></textarea>
+                    </div>
+                    
+                    <div class="contacto--boton">
+                        <input class="contenedor--input__boton" type="submit" value="Enviar" name="enviar">
+                    </div>
+                </div> <!--.contacto--contenedor-->
+            </fieldset>
+        </form>
+    
+</div> <!--Termina codigo para formulario contacto-->
+
+<footer class="footer">
+    <a class="logo__footer" href="index.html">
+        <h1 class="logo-nombre centrar-texto no-margin">Digital<span class="logo-bold">Solutions</span></h1>
+    </a>
+</footer>
+
+</body>
+</html>
